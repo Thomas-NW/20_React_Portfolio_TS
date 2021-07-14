@@ -18,6 +18,8 @@ Created by Thomas Schmidt
 🔍 Updating my previous portfolio and build it toward being employer competitive. Creating a portfolio using React to apply the latest technologies. 
 Contect update was not performed since the focus was on the conversion of a markup file to React. 
 
+![React Portfolio Home Page](./public/assets/img/React_Portfolio.png)
+
 
 ## Badges
 🏆 N/A/
@@ -54,6 +56,9 @@ HTML 5.0, CSS, JavaScript, jQuery, Bootstrap, React.js
 
 ## Github reference 
 https://github.com/Thomas-NW/20_React_Portfolio_TS.git
+
+Heroku Deplayment:
+https://reactportfoliots.herokuapp.com/
 
 
 Thank you for visiting and reviewing the project. 
