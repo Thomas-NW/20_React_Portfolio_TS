@@ -6,7 +6,7 @@ import React from "react";
 
 function Home() {
   return (
-    
+
     <div >
       <h1>Thomas Schmidt, Dipl.-Ing.</h1>
       <p>I'm <span> an Entrepreneur, an Advisor, a Consultant, Business Committed, a Problem Solver</span></p>
@@ -19,7 +19,7 @@ function Home() {
         <a href="https://github.com/Thomas-NW?tab=repositories" target="_blank"><i className="bx bxl-github"></i></a>
       </div>
     </div>
-  
+
   );
 }
 

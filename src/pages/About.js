@@ -7,10 +7,8 @@ import Col from "../components/Col";
 
 function About() {
     return (
-
         <section>
             <div >
-
                 <div className="section-title">
                     <h2>About</h2>
                     <p>Executive of global operational and strategic leadership experience in technical service and
@@ -66,9 +64,6 @@ function About() {
 
             </div>
         </section>
-
-
-
     );
 }
 

@@ -8,20 +8,9 @@ import Resume from "./pages/Resume";
 import Portfolio from "./pages/Portfolio";
 import Testimonials from "./pages/Testimonials";
 import Contact from "./pages/Contact";
-
-// import QwlCarousel from 'react-owl-carousel2';
-// import 'react-owl-carousel2/style.css';
-
-
-
-import Projects from "./pages/Skills";
-// import About from "./pages/About";
-
-// import Discover from "./pages/Discover";
-// import Search from "./pages/Search";
 import Navbar from "./components/Navbar";
 import Footer from "./components/Footer";
-import Wrapper from "./components/Wrapper";
+// import Wrapper from "./components/Wrapper";
 
 
 function App() {
@@ -32,7 +21,13 @@ function App() {
 
       <header id="header" className="d-flex flex-column justify-content-center">
 
-        <nav className="nav-menu">
+      <Router>
+            <div>
+              <Route exact path="/" component={Navbar} />
+            </div>
+          </Router>
+
+        {/* <nav className="nav-menu">
           <ul>
             <li className="active"><a href="#hero"><i className="bx bx-home"></i> <span>Home</span></a></li>
             <li><a href="#about"><i className="bx bx-user"></i> <span>About</span></a></li>
@@ -44,7 +39,7 @@ function App() {
             <li><a href="#testimonials"><i className="bx bx-arrow-to-right"></i> <span>Testimonials</span></a></li>
             <li><a href="#contact"><i className="bx bx-envelope"></i> <span>Contact</span></a></li>
           </ul>
-        </nav>
+        </nav> */}
 
       </header>
 
@@ -653,23 +648,31 @@ function App() {
 
 
     </main>
-    <footer id="footer">
-    <div className="container">
-      <h3>Thomas Schmidt</h3>
-      <p>This page is copy right (c) protected. Please contact us if you would like to use it as a template. Thank you!</p>
-      <div className="social-links">
-       
-        <a href="https://www.linkedin.com/in/thomasschmidteceglobal/" className="linkedin"><i className="bx bxl-linkedin"></i></a>
-      </div>
-      <div className="copyright">
-        &copy; Copyright <strong><span>MyResume</span></strong>. All Rights Reserved
-      </div>
-      <div className="credits">
-       the pro version with working PHP/AJAX contact form: https://bootstrapmade.com/free-html-bootstrap-template-my-resume/ -->
-        Designed by <a href="https://bootstrapmade.com/">BootstrapMade</a>
-      </div>
-    </div>
-  </footer>
+      <footer id="footer">
+        <Router>
+          <div>
+            <Route exact path="/" component={Footer} />
+          </div>
+        </Router>
+
+
+        {/* <div className="container">
+          <h3>Thomas Schmidt</h3>
+          <p>This page is copy right (c) protected. Please contact us if you would like to use it as a template. Thank you!</p>
+          <div className="social-links">
+
+            <a href="https://www.linkedin.com/in/thomasschmidteceglobal/" className="linkedin"><i className="bx bxl-linkedin"></i></a>
+          </div>
+          <div className="copyright">
+            &copy; Copyright <strong><span>MyResume</span></strong>. All Rights Reserved
+          </div>
+          <div className="credits">
+            the pro version with working PHP/AJAX contact form: https://bootstrapmade.com/free-html-bootstrap-template-my-resume/ -->
+            Designed by <a href="https://bootstrapmade.com/">BootstrapMade</a>
+          </div>
+        </div> */}
+
+      </footer>
 
   <a href="#" className="back-to-top"><i className="bx bx-up-arrow-alt"></i></a>
   <div id="preloader"></div>
